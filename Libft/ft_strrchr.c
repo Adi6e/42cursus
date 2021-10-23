@@ -6,7 +6,7 @@
 /*   By: ldarlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 20:33:55 by ldarlene          #+#    #+#             */
-/*   Updated: 2021/10/22 20:22:57 by ldarlene         ###   ########.fr       */
+/*   Updated: 2021/10/23 20:14:06 by ldarlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	int				i;
 	unsigned char	ch;
 
-	size = ft_strlen((char *) s);
+	size = ft_strlen(s);
 	ch = c;
 	i = size;
 	while (1)

@@ -6,13 +6,13 @@
 /*   By: ldarlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 18:57:40 by ldarlene          #+#    #+#             */
-/*   Updated: 2021/10/22 20:36:56 by ldarlene         ###   ########.fr       */
+/*   Updated: 2021/10/23 19:57:00 by ldarlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_cnt_digits(long long n)
+static	int	ft_cnt_digits(long long n)
 {
 	int	cnt;
 

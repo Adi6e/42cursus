@@ -6,11 +6,11 @@
 /*   By: ldarlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 20:39:06 by ldarlene          #+#    #+#             */
-/*   Updated: 2021/10/22 20:34:10 by ldarlene         ###   ########.fr       */
+/*   Updated: 2021/10/23 19:55:35 by ldarlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isspace(char c)
+static	int	ft_isspace(char c)
 {
 	return (c == '\t' || c == '\n'
 		|| c == '\f' || c == '\r'

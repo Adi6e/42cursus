@@ -6,7 +6,7 @@
 /*   By: ldarlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 18:00:46 by ldarlene          #+#    #+#             */
-/*   Updated: 2021/10/22 20:00:47 by ldarlene         ###   ########.fr       */
+/*   Updated: 2021/10/23 20:13:03 by ldarlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,10 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	if (!s1 || !s2)
 		return (NULL);
-	fsize = ft_strlen((char *) s1);
-	ssize = ft_strlen((char *) s2);
+	fsize = ft_strlen(s1);
+	ssize = ft_strlen(s2);
+	if (fsize > (18446744073709551615 - ssize))
+		return (NULL);
 	res = (char *)malloc((fsize + ssize + 1) * sizeof(char));
 	if (!res)
 		return (NULL);

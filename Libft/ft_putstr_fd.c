@@ -6,7 +6,7 @@
 /*   By: ldarlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 19:58:23 by ldarlene          #+#    #+#             */
-/*   Updated: 2021/10/22 19:20:10 by ldarlene         ###   ########.fr       */
+/*   Updated: 2021/10/23 20:11:41 by ldarlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void	ft_putstr_fd(char *s, int fd)
 
 	if (!s)
 		return ;
-	len = ft_strlen(s);
+	len = ft_strlen((const char *) s);
 	write(fd, s, len);
 }

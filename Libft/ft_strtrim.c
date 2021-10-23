@@ -6,13 +6,13 @@
 /*   By: ldarlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/17 18:50:24 by ldarlene          #+#    #+#             */
-/*   Updated: 2021/10/22 21:27:47 by ldarlene         ###   ########.fr       */
+/*   Updated: 2021/10/23 20:14:15 by ldarlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_is_in_set(char c, const char *str)
+static	int	ft_is_in_set(char c, const char *str)
 {
 	int	i;
 
